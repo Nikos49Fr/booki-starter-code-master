@@ -12,7 +12,6 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
 </head>
 
 <body>
@@ -27,6 +26,59 @@
             </nav>
         </header>
         <main>
+            <div class="main-section">
+                <div>
+                    <h1>Trouvez votre bébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+            <!-- Search bar -->
+                <form action="#" method="get" class="main-section-search">
+                    <div class="main-section-search-label">
+                        <label for="ville">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class="main-section-search-field">
+                        <input type="text" size="18" name="ville" id="ville" value="Marseille, France">
+                    </div>
+                    <div class="main-section-search-buttons">
+                        <input type="submit" value="Rechercher" class="main-section-search-btext">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass main-section-search-bicon" aria-hidden="true"></i></a>
+                    </div>
+                </form>
+            <!-- Filters -->
+                <div class="main-section-filters">
+                    <h2>Filtres</h2>
+                    <a href="#">
+                        <div>
+                            <i class="fa-lg fa-solid fa-money-bill-wave"></i>
+                            <p>Économique</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <i class="fa-lg fa-solid fa-person"></i>
+                            <p>Familial</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <i class="fa-lg fa-solid fa-heart"></i>
+                            <p>Romantique</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <i class="fa-lg fa-solid fa-fire"></i>
+                            <p>Nos pépites</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="main-section-info">
+                    <p><i class="fa-2xs fa-solid fa-info"></i></p>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 

@@ -59,6 +59,123 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header + barre de navigation ***********/
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header img {
+    height: 19px;
+    margin: 30px 50px 30px 0;
+}
+.header ul {
+    display: flex;
+    gap: 68px;
+    list-style: none;
+    margin-top: 18px;
+}
+.header a:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+    padding-top: 16px;
+}
+
+/****** Main section, search bar + filters ***********/
+.main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+h1 {
+    font-weight: bold;
+    font-size: 1.375rem;
+    margin-bottom: 8px;
+    padding: 0;
+}
+p {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 1.125rem;
+}
+.main-section-search {
+    display: flex;
+}
+.main-section-search-label,
+.main-section-search-field input,
+.main-section-search-btext {
+    height: 49px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 1.125rem;
+    text-align: center;
+    border: none;
+}
+.main-section-search-label {
+    padding: 15px 18px;
+    background-color: var(--main-bg-color);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.main-section-search-label i {
+    color: black;
+}
+.main-section-search-field input {
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+}
+.main-section-search-btext {
+    padding: 15px 16px;
+    background-color: var(--main-color);
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.main-section-search-bicon {
+    display: none;
+}
+.main-section-filters,
+.main-section-filters div {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 15px;
+    height: 50px;
+}
+.main-section-filters div {
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 4px 19px;
+}
+.main-section-filters p {
+    font-weight: bold;
+    font-size: 1.063rem;
+    margin: 0;
+}
+.main-section-filters a:hover {
+    background-color: #DEEBFF;
+    border-radius: 25px;
+}
+.main-section-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+.main-section-info i {
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 10px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 12px;
+}
+.main-section-info p {
+    margin: 0;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
