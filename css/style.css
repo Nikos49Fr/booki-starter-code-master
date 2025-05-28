@@ -373,19 +373,20 @@ h2 {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .main-section-filters {
+        flex-direction: column;
+        gap: 20px;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 50px;
     }
-
     .hebergements {
         width: 100%;
     }
-
     .populaires {
         width: 100%;
     }
-
     .populaires-cards {
         display: flex;
         flex-direction: row;
@@ -398,17 +399,14 @@ h2 {
     .populaires-cards a {
         width: calc((100% - 40px) / 3);
     }
-
     .populaires-cards .card-title {
         font-size: 1rem;
     }
-
     .populaires-cards .card-subtitle {
         font-size: 0.875rem;
     }
-    .main-section-filters {
-        flex-direction: column;
-        gap: 20px;
+    .activites-cards img {
+        aspect-ratio: 194 / 200;
     }
 }
 
@@ -417,67 +415,7 @@ h2 {
     .main-container {
         padding: 0;
     }
-    .hebergements-and-populaires {
-        flex-direction: column-reverse; 
-        gap: 15px;
-    }
-    .hebergements-and-populaires section {
-        border-radius: 0;
-        padding: 30px 20px;
-    }
-    .hebergements-and-populaires section.hebergements {
-        background-color: white;
-        padding: 20px;
-    }
-    .populaires {
-        width: 100%;
-    }
-    .populaires-title {
-        margin-bottom: 15px;
-    }
-    .populaires-cards {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .populaires-cards .card {
-        margin-bottom: 0;
-    }
-    .populaires-cards a {
-        width: 100%;
-    }
-    .hebergements-title {
-        margin-bottom: 15px;
-    }
-    .hebergements-cards {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .hebergements-cards .card-subtitle {
-        font-size: 0.875rem;
-    }
-    .hebergements-cards a {
-        width: 100%;
-    }
-    .activites-cards {
-        flex-direction: column;
-        gap: 15px;
-        box-sizing: border-box;
-    }
-    .activites-cards a {
-        width: 100%;
-    }
-    .activites-cards img {
-        aspect-ratio: 315 / 141;
-    }
-    .footer-content {
-        flex-direction: column;
-        gap: 50px;
-        padding: 30px;
-    }
-    .footer-article {
-        width: 100%;
-        padding: 0;
-    }
+    /* Header + navigation bar */
     .header {
         flex-direction: column;
         align-items: center;
@@ -489,7 +427,6 @@ h2 {
         width: 100%;
     }
     .header ul {
-        width: 100%;
         padding-left: 0;
         gap: 0;
         margin: 0;
@@ -549,5 +486,68 @@ h2 {
     }
     .main-section-search-field #ville {
         width: 100%;
+    }
+    /* Hebergements and Populaires */
+    .hebergements-and-populaires {
+        flex-direction: column-reverse; 
+        gap: 15px;
+    }
+    .hebergements-and-populaires section {
+        border-radius: 0;
+        padding: 30px 20px;
+    }
+    .hebergements-and-populaires section.hebergements {
+        background-color: white;
+        padding: 20px;
+    }
+    .hebergements-title {
+        margin-bottom: 15px;
+    }
+    .hebergements-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hebergements-cards .card-subtitle {
+        font-size: 0.875rem;
+    }
+    .hebergements-cards a {
+        width: 100%;
+    }
+    .populaires {
+        width: 100%;
+    }
+    .populaires-title {
+        margin-bottom: 15px;
+    }
+    .populaires-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .populaires-cards .card {
+        margin-bottom: 0;
+    }
+    .populaires-cards a {
+        width: 100%;
+    }
+    .activites-cards {
+        flex-direction: column;
+        gap: 15px;
+        box-sizing: border-box;
+    }
+    .activites-cards a {
+        width: 100%;
+    }
+    .activites-cards img {
+        aspect-ratio: 315 / 141;
+    }
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px;
+    }
+    .footer-article {
+        width: 100%;
+        padding: 0;
     }
 }
